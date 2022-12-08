@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * mian - entry point
+ * main - entry point
  *
  * Return: ends after code completion
  *
