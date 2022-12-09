@@ -4,7 +4,7 @@
 /**
  * main - entry point
  *
- * Retrun: 0 if successfully completed
+ * Return: 0 if successfully completed
  *
  */
 
