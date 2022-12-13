@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point to the function
+ * main - entry point
  *
  * Return: 0 if successfully completed
  *
