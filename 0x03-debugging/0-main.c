@@ -1,28 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-/* more headers goes there */
-/**
- * main - entry point
- *
- * Return: 0 if completed successfully
- *
- */
-/* betty style doc for function main goes there */
+#include "main.h"
 
-void positive_or_negative(int n)
+/**
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
+int main(void)
 {
-	int n;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else
-	{
-		printf("%d is zero\n", 0);
-	}
+	int i, k;
+
+	i = 98;
+	k = 0;
+	positive_or_negative(i);
+	positive_or_negative(k);
+
 	return (0);
 }
