@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    
+int size = 3;
+        int i, j, k;
+
+        if (size <= 0)
+        {
+                putchar('\n');
+        }
+        else
+        {
+            for (i = 1; i <= size; i++)
+            {
+                for (j = size - i; j >= 1; j--)
+                {
+                   putchar(' ');
+                }
+                for (k = i; k > 1 ; k--)
+                {
+                    putchar('#');
+                }
+                putchar(10);
+            }
+            putchar(10);
+        }
+        return (0);
+}
