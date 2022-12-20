@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 	{
 		if (n <= 0)
 		{
-			break;
+			putchar('\n');
 		}
 		if (i == n - 1)
 		{
