@@ -1,33 +1,28 @@
 #include "main.h"
 
 /**
- *_strncpy - copy src into dest.
- *@dest: first string.
- *@src: second string.
- *@n: the number of bytes to use from src.
- *Return: string.
+ * _strncpy - concatnates strings
+ * @dest: arg1 from test function
+ * @src: arg2 from test function
+ * @n: number of bytes to be concatinated
+ * Return: 0 if successfully completed
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, k = 0;
+	int i, length;
 
-	while (n > k)
+	for (length = 0; src[length] != '\0'; length++)
 	{
-		if (src[k] == '\0')
-		{
-			for (; k < n; k++)
-			{
-				dest[i] = '\0';
-				i++;
-			}
-		}
-		else
-		{
-			dest[i] = src[k];
-			k++;
-			i++;
-		}
+	}
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+
+	if (n > length)
+	{
+		dest[length] = '\0';
 	}
 
 	return (dest);
