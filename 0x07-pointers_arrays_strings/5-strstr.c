@@ -1,25 +1,24 @@
 #include "main.h"
 
 /**
- * _strstr - returns a matched substring
- * @haystack: string constant to be searched in
- * @needle: test string
- * Return: returns pointer to matched character
+ * _strstr - returns pointer to first char of matching substring
+ * @haystack: string to find substring in
+ * @needle: substring to find match of
+ * Return: pointer to first char of matching substring
  */
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
+	int k;
 
-	for (i = 0; needle[i] != '\0'; i++)
+	while (*haystack != '\0')
 	{
-		for (j = 0; haystack[j] != '\0'; j++)
-		{
-			if (needle[i] == haystack[j] && haystack[j] != ' ')
-			{
-				return (needle + i);
-			}
-		}
+		k = 0;
+		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
+			haystack++, needle++, k++;
+		if (*needle == '\0')
+			return (haystack - k);
+		haystack -= (k - 1), needle -= k;
 	}
-	return (0);
+	return ('\0');
 }
