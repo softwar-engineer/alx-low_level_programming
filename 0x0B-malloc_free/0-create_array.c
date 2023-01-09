@@ -5,7 +5,7 @@
 /**
  * create_array - creates an array of chars
  * @size: size of the array
- * @c; character to initialize array
+ * @c: character to initialize array
  * Return: returns 0 if not NULL
  */
 
